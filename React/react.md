@@ -1,6 +1,6 @@
 # React
 
-- 왜 사용하는가?
+Node 기반의 Javascript 라이브러리
 
 <br>
 
@@ -8,7 +8,7 @@
 
 <br>
 
-1. Component 기반의 UI 라이브러리
+1. Component 단위
 
 - 여러 파일의 중복되는 부분을 Component단위로 나누어 조립할 수 있다.
 
