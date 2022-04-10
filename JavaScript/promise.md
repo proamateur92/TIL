@@ -22,6 +22,7 @@ Promise 객체는 3가지의 상태를 가진다.
 ```
 
 <br>
+
 ```
   promise
     .then((res) => { // promise 이행 시 리턴 값
