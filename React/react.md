@@ -21,7 +21,8 @@ Node 기반의 Javascript 라이브러리
 3. Virtual DOM
 
 - DOM요소의 조작이 있을 때마다 웹 브라우저의 렌더링이 이루어지는 경우 Virtual DOM을 통해 수시로 렌더링 되는 것이 아니라 연산 전, 후를 비교하여 변동된 사항을 반영한다.
-  <br>
+
+<br>
 
 ### React 사용을 위한 라이브러리
 
@@ -34,6 +35,8 @@ Node 기반의 Javascript 라이브러리
 ```
 <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
 ```
+
+<br>
 
 2. React DOM
 
