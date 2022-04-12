@@ -48,7 +48,7 @@ Node 기반의 Javascript 라이브러리
 
 <br>
 
-##### id가 'root'인 컨테이너에 React Element를 추가하고 render하는 경우
+#### id가 'root'인 컨테이너에 React Element를 추가하고 render하는 경우
 
 <br>
 
@@ -59,7 +59,7 @@ const root = document.getElementById('root');
       // elementName
       {
         /*
-          property Object: eventLister, className, style 등의 property를 가질 수 있다.
+          property Object: eventListner, className, style 등의 property를 가질 수 있다.
         */
       },
       // content
