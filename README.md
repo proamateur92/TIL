@@ -2,6 +2,10 @@
 
 <img src="https://img.shields.io/badge/JavaScript-9c27b0?style=flat-square&logo=JavaScript&logoColor=white"/></a>
 
+## Git
+
+- <a href='./Git/basic.md'>Git의 전반적인 이해</a>
+
 ## JavaScript
 
 - Promise
