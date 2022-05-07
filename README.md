@@ -1,6 +1,8 @@
 # Today I Learned Wiki
 
-<img src="https://img.shields.io/badge/JavaScript-9c27b0?style=flat-square&logo=JavaScript&logoColor=white"/></a>
+<img alt="Github" src="https://img.shields.io/badge/Github-181717?style=flat-square&logo=Github&logoColor=white"/>
+<img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF30?style=flat-square&logo=JavaScript&logoColor=black"/>
+<img alt="JavaScript" src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=black"/>
 
 ## Git
 
