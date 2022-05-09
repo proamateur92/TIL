@@ -54,38 +54,37 @@ https://ko.reactjs.org/
 
 <br>
 
-#### id가 'root'인 컨테이너에 React Element를 추가하고 render하는 경우
-
-<br>
+<details>
+<summary>id가 'root'인 컨테이너에 React Element(span)를 추가하고 render해볼래?</summary>
+<div markdown="1">
 
 ```
 const root = document.getElementById('root');
-
-    const h1 = React.createElement(
-      // elementName
-      {
-        /*
-          property Object: eventListner, className, style 등의 property를 가질 수 있다.
-        */
-      },
-      // content
-    );
-
-    const btn = React.createElement(
-      'button',
-      {
-        class: 'btn',
-        onClick: () => console.log('you clicked?!'),
-      },
-      '나는 버튼이야'
-    );
-
-    // 2개 이상의 React element를 render하는 경우 배열에 넣어준다.
-    const container = React.createElement('div', null, [h1, btn]);
-
-    // React element container를 root에 렌더링하라
-    ReactDOM.render(container, root);
+const span = React.createElement('span', {}, '안냥');
+ReactDOM.render(span, root);
 ```
+
+</div>
+</details>
+
+<br>
+
+<details>
+<summary>id가 'root'인 컨테이너에 React Element(span, button)를 추가하고 render해볼래?</summary>
+<div markdown="1">
+
+```
+const root = document.getElementById('root');
+const span = React.createElement('span', {}, '안냥');
+// 두번째 인자로 id, class 등 props를 작성해준다.
+const button = React.createElement('button', { onClick: () => alert('누르지 마잉~') }, '난 버튼이야!');
+    ReactDOM.render([span, button], document.body);
+
+ReactDOM.render([span, button], root);
+```
+
+</div>
+</details>
 
 <br>
 
