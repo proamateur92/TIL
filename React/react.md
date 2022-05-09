@@ -76,6 +76,7 @@ ReactDOM.render(span, root);
 ```
 const root = document.getElementById('root');
 const span = React.createElement('span', {}, '안냥');
+
 // 두번째 인자로 id, class 등 props를 작성해준다.
 const button = React.createElement('button', { onClick: () => alert('누르지 마잉~') }, '난 버튼이야!');
     ReactDOM.render([span, button], document.body);
@@ -87,49 +88,6 @@ ReactDOM.render([span, button], root);
 </details>
 
 <br>
-
-### JSX
-
-JavaScript 확장 문법으로 React element 생성 시 보다 간단히 작성할 수 있다.
-
-<br>
-
-##### JSX 공식 문서
-
-https://ko.reactjs.org/docs/introducing-jsx.html
-
-<br>
-
-```
-const root = document.querySelector('#root');
-    // React Element를 함수의 return 값으로 내보낸다.
-    const H1 = function () {
-      return (
-        <h1 class='greeting' onMouseEnter={() => console.log('Mouse Entered')}>
-          Hello, world!
-        </h1>
-      );
-    };
-
-    const Button = () => {
-      return (
-        <button class='button' onClick={() => console.log('I am a click')}>
-          Button Text
-        </button>
-      );
-    };
-
-    const Container = () => {
-      return (
-        <div>
-          <H1 />      // 변수명의 첫글자는 반드시 대문자로 작성해준다.
-          <Button />  // 소문자로 작성할 경우 html태그로 인식한다.
-        </div>
-      );
-    };
-
-    ReactDOM.render(<Container />, root);
-```
 
 <br>
 
@@ -149,7 +107,7 @@ https://babeljs.io/docs/en/babel-standalone
 
 https://babeljs.io/repl
 
-<br><br>
+<br>
 
 - Babel을 사용하기 위한 Script
 
@@ -163,4 +121,89 @@ https://babeljs.io/repl
 
 ```
 <script type='text/babel'></script>
+```
+
+<br>
+
+- Babel을 사용한 코드와 그렇지 않은 코드를 살펴보자.
+
+```
+<!-- JSX 코드 -->
+const Title = (
+      <h1 id='title' onMouseEnter={() => alert('건드리지마!')}>
+        반가워잉
+      </h1>
+    );
+```
+
+```
+<!-- Babel은 위의 JSX 코드를 아래처럼 변환시켜준다. -->
+const Title = /*#__PURE__*/React.createElement("h1", {
+  id: "title",
+  onMouseEnter: () => alert('건드리지마!')
+}, "\uBC18\uAC00\uC6CC\uC789");
+```
+
+### JSX
+
+JavaScript 확장 문법으로 React element 생성 시 보다 간단히 작성할 수 있다.
+
+<br>
+
+##### JSX 공식 문서
+
+https://ko.reactjs.org/docs/introducing-jsx.html
+
+<br>
+
+#### JSX 써보기
+
+<br>
+
+```
+<!-- 기존 react element 생성 방식 -->
+const span = React.createElement('span', {}, '안냥');
+
+<!-- JSX 코드로 작성했을 때 -->
+<!-- const span = <span>안냥</span> -->
+```
+
+<br>
+
+#### JSX 써보기2
+
+```
+<!-- 함수를 할당 받는 변수로 선언해준다. -->
+const Title = () => {
+  return (
+    <h1 id='title' onMouseEnter={() => alert('건드리지마!')}>
+      반가워잉
+    </h1>
+  );
+};
+
+const Button = () => {
+  return (
+    <button
+      onClick={() => {
+        alert('누르지 마잉~');
+      }}
+    >
+      난 버튼이야
+    </button>
+  );
+};
+
+const Container = () => {
+  return (
+    <div>
+      <!-- html 요소처럼 선언해준다. -->
+      <!-- 첫글자가 대문자인 것을 주의하자. -->
+      <Title />
+      <Button />
+    </div>
+  );
+};
+
+ReactDOM.render(<Container />, root);
 ```
