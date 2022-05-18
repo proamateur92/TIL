@@ -142,6 +142,21 @@ Button.propTypes = {
 
 <br>
 
+#### 3. React 프로젝트에서 PropTypes 사용 예제
+
+```
+import PropTypes from 'prop-types';
+
+Movie.propType = {
+  coverImg: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  summary: PropTypes.string.isRequired,
+  genres: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
+```
+
+<br>
+
 ### PropType 더 알아보기
 
 - PropType에서 지원하는 내용은 아래의 공식 사이트에서 확인할 수 있다.
