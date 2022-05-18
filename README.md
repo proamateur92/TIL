@@ -18,5 +18,6 @@
   - <a href='./React/state.md'>state</a>
   - <a href='./React/props.md'>props</a>
   - <a href='./React/effect.md'>effect</a>
+  - <a href='./React/route.md'>route</a>
 
 ![Footer](https://capsule-render.vercel.app/api?type=waving&color=ba68c8&height=200&section=footer)
