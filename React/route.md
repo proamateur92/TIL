@@ -25,7 +25,7 @@ npm install react-router-dom@6
 
 <br>
 
-3. react-router-dom 사용하기
+3. react-router-dom import
 
 - hash router - #이 붙은 url형태
 - browser router - 일반적인 url과 같은 형태
@@ -99,7 +99,9 @@ import { Link } from 'react-router-dom';
 
 <br>
 
-### url 이동할 때 데이터 전달하기
+### url 이동할 때 동적 데이터 전달하기
+
+<br>
 
 1. 데이터를 전달할 때는 콜론을 작성해주자
 
@@ -109,8 +111,8 @@ path='/movie/:id'
 
 <br>
 
-- path='/movie/id'에서 콜론을 제거하면 id를 텍스트 자체로 인식하여
-  /movie/id 로 이동하게 된다.
+> path='/movie/id'에서 콜론을 제거하면 id를 텍스트 자체로 인식하여
+> /movie/id 로 이동하게 된다.
 
 <br>
 
@@ -128,4 +130,26 @@ path='/movie/:id'
 <h2>
   <Link to={`/movie/${id}`}>{title}</Link>
 </h2>
+```
+
+<br>
+
+### url 이동할 때 동적 데이터 전달 받기
+
+<br>
+
+#### Detail.js
+
+1. useParams를 import 해준다.
+
+```
+import { useParams } from 'react-router-dom';
+```
+
+<br>
+
+2. 전달 받은 데이터를 useParams 함수로부터 할당 받는다.
+
+```
+const { id } = useParams();
 ```
