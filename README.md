@@ -17,5 +17,6 @@
 - <a href='./React/react.md'>React의 특징과 JSX, Babel까지</a>
   - <a href='./React/state.md'>state</a>
   - <a href='./React/props.md'>props</a>
+  - <a href='./React/effect.md'>effect</a>
 
 ![Footer](https://capsule-render.vercel.app/api?type=waving&color=ba68c8&height=200&section=footer)
