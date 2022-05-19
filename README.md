@@ -6,6 +6,7 @@
 
 - <a href='./Git/basic.md'>Git의 전반적인 이해</a>
 - <a href='./Git/branchMerge.md'>branch와 merge</a>
+- <a href='./Git/react-deploy.md'>Github페이지 - React 프로젝트 배포하기</a>
 
 ## JavaScript
 
