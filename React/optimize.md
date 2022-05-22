@@ -9,7 +9,7 @@
 
 <br>
 
-### 성능 최적화 1
+### 성능 최적화 1 - useMemo()
 
 - data(배열) state 값이 변경되면 하기의 함수가 호출된다.
 - 아래의 함수(getDiaryAnalysis)는 data의 길이만을 변수로 할당 받는다.
@@ -54,7 +54,7 @@ const { goodCount, badCount, goodRatio } = getDiaryAnalysis;
 
 <br>
 
-### 성능 최적화 2
+### 성능 최적화 2 - React.memo
 
 <br>
 
