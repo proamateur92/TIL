@@ -21,5 +21,6 @@
   - <a href='./React/effect.md'>effect</a>
   - <a href='./React/ref.md'>ref</a>
   - <a href='./React/route.md'>route</a>
+  - <a href='./React/optimize.md'>성능최적화</a>
 
 ![Footer](https://capsule-render.vercel.app/api?type=waving&color=ba68c8&height=200&section=footer)
