@@ -17,6 +17,8 @@
 - 따라서, 일기의 update는 data의 길이에 지장을 주지 않으므로 계속해서 render 된다면 비효율적이다.
 - 참고링크 https://ko.reactjs.org/docs/hooks-reference.html#usememo
 
+<br>
+
 ```
 // App.js
 const getDiaryAnalysis = () => {
