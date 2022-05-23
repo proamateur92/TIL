@@ -11,9 +11,11 @@
 
 ### 성능 최적화 1 - useMemo()
 
+- 어떤 데이터를 반환하는 함수가 있을 때, 그 연산 결과에 따른 memoization 수행.
 - data(배열) state 값이 변경되면 하기의 함수가 호출된다.
 - 아래의 함수(getDiaryAnalysis)는 data의 길이만을 변수로 할당 받는다.
 - 따라서, 일기의 update는 data의 길이에 지장을 주지 않으므로 계속해서 render 된다면 비효율적이다.
+- 참고링크 https://ko.reactjs.org/docs/hooks-reference.html#usememo
 
 ```
 // App.js
@@ -55,6 +57,10 @@ const { goodCount, badCount, goodRatio } = getDiaryAnalysis;
 <br>
 
 ### 성능 최적화 2 - React.memo
+
+- props가 변경됨에 따라 호출되는 컴포넌트가 있을 때 props값을 비교하여 memoization 수행.
+- 고차 컴포넌트를 사용한다.
+- 참고 링크 https://ko.reactjs.org/docs/react-api.html#reactmemo
 
 <br>
 
