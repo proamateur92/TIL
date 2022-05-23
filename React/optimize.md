@@ -108,6 +108,7 @@ export default OptimizeTest;
 
 - 원시 데이터의 경우에는 값이 동일할 경우 state이 동작하지 않는다.
 - 객체는 얕은 비교(비원시 타입을 비교할 때 객체의 주소에 의한 비교)를 하게 된다.
+- 따라서 객체의 속성을 비교해주는 함수를 추가적으로 사용하여 React.memo 함수에 인자로 넣어주어야 한다.
 
 ```
 const CounterA = React.memo(({ count }) => {
