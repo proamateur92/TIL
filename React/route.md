@@ -58,6 +58,10 @@ import Detail from './routes/Detail';
 
     // /movie를 입력하면 Detail Component 호출
     <Route path='/movie' element={<Detail />}></Route>
+
+    // /drama/ + 키워드를 입력하면 Drama Component 호출
+    <Route path='/drama/:genre' element={<Drama />}></Route>
+
   </Routes>
 </BrowserRouter>
 ```
@@ -152,4 +156,37 @@ import { useParams } from 'react-router-dom';
 
 ```
 const { id } = useParams();
+```
+
+<br>
+
+### useNavigate 사용하기
+
+- v6버전 이전에서는 useHistory를 사용할 수 있었다.
+- useNavigate를 통해 뒤로가기, 페이지 이동이 가능하다.
+  <br>
+
+```
+// useNavigate를 받아줄 객체를 생성한다.
+const navigate = useNavigate();
+
+// Link와 사용법은 일맥상통하다.
+<button onClick={() => navigate('/')}>Main페이지</button>
+
+// 뒤로가기
+<button onClick={() => navigate(-1)}>Main페이지</button>
+```
+
+<br>
+
+### PageNotFound page만들기
+
+```
+<Route path={'*'} element={<NotFound />}></Route>
+
+// NotFound.js
+<div>
+  <h1>존재하지 않는 페이지입니다.</h1>
+  <button onClick={() => navigate(-1)}>뒤로가기</button>
+</div>
 ```
