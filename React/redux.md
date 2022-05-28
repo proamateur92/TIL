@@ -59,7 +59,7 @@ export default store;
 ```
 // index.js
 import { Provider } from 'react-redux';
-import { store } from './redux/congifure';
+import store from './redux/configStore';
 
 <Provider store={store}>
 </Provider>
