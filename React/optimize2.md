@@ -124,3 +124,27 @@ export default React.memo(Button);
 Button.js에 React.memo를 적용했음에도 콘솔에는 'App running', 'Button Running'가 계속해서 찍힌다.
 
 자바스크립트에서 App함수가 실행될 때마다 App에 선언된 값들은 전부 새로 생성되어진다. 원시 값을 비교하면 서로 값이 동일하지만 함수는 참조 값이기 때문에 새로운 함수 props.toggleParagraphHandler와 이전 함수 props.prev.toggleParagraphHandler는 서로 다른 값이 되기 때문에 React.memo로 최적화할 수 없다.
+
+<br>
+
+## useCallback()으로 함수 재생성 방지하기
+
+- 우리는 useCallback로 함수를 저장하고 매번 실행할 때마다 재생성 할 필요없다고 알려준다.
+- 같은 메모리 주소를 참조하여 비교하게 된다.
+- useCallback함수로 저장하려는 함수를 감싸기만하면 된다.
+- useEffect처럼 dependecy 인자가 필요하다.
+  <br>
+
+```
+// App.js
+const toggleParagraphHandler = useCallback(() => {
+  setShowParagraph(prev => !prev);
+}, []);
+```
+
+<br>
+
+이제 리렌더링 할 때 console에는 'App running'만이 찍히게 된다.
+어떤 함수가 절대 변경이 되지 않아야 한다면 useCallback을 사용한다.
+
+<br>
