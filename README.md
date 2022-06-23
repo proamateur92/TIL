@@ -24,8 +24,9 @@
   - <a href='./React/reducer.md'>reducer</a>
   - <a href='./React/redux.md'>redux</a>
   - <a href='./React/context.md'>context</a>
-  - <a href='./React/optimize.md'>성능최적화</a>
   - <a href='./React/portal.md'>Fragments, Portals</a>
+  - <a href='./React/optimize.md'>성능최적화1</a>
+  - <a href='./React/optimize2.md'>성능최적화2</a>
 
 <br>
 
