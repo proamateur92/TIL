@@ -16,20 +16,25 @@
 ## React
 
 - <a href='./React/react.md'>React의 특징과 JSX, Babel까지</a>
-  - <a href='./React/state.md'>state</a>
-  - <a href='./React/props.md'>props</a>
-  - <a href='./React/effect.md'>effect</a>
-  - <a href='./React/ref.md'>ref</a>
-  - <a href='./React/route.md'>route</a>
-  - <a href='./React/reducer.md'>reducer</a>
-  - <a href='./React/redux.md'>redux</a>
-  - <a href='./React/context.md'>context</a>
-  - <a href='./React/portal.md'>Fragments, Portals</a>
-  - <a href='./React/optimize.md'>성능최적화1</a>
-  - <a href='./React/optimize2.md'>성능최적화2</a>
+- <a href='./React/state.md'>state</a>
+- <a href='./React/props.md'>props</a>
+- <a href='./React/effect.md'>effect</a>
+- <a href='./React/ref.md'>ref</a>
+- <a href='./React/route.md'>route</a>
+- <a href='./React/reducer.md'>reducer</a>
+- <a href='./React/redux.md'>redux</a>
+- <a href='./React/context.md'>context</a>
+- <a href='./React/portal.md'>Fragments, Portals</a>
+- <a href='./React/optimize.md'>성능최적화1</a>
+- <a href='./React/optimize2.md'>성능최적화2</a>
 
 <br>
 
+## TypeScript
+
+- <a href='./TypeScript/basic.md'>기본 문법</a>
+
+<br>
 - CSS
   - <a href='./React/css/styledComponent.md'>styled-component</a>
   - <a href='./React/css/module.md'>css module</a>
