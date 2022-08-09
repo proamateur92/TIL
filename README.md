@@ -33,6 +33,7 @@
 ## TypeScript
 
 - <a href='./TypeScript/basic.md'>기본 문법</a>
+- <a href='./TypeScript/react.md'>리액트 + TypeScript 프로젝트</a>
 
 <br>
 - CSS
